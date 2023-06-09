@@ -1,0 +1,329 @@
+*{
+  margin: 0;
+  padding: 5;
+  box-sizing: border-box;
+  font-family: 'Pangolin', cursive;
+}
+
+body{
+  background-image: url("http://drive.google.com/uc?export=view&id=1EnymJpwrmFFW9UfrJ5OfVFDqeeNjUpk8");
+  background-repeat: repeat;
+  background-size: contain;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: auto;
+  min-width: 960px;
+}
+
+main{
+  width: 95%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+/*----------------------------------------------- menu de navegacion ------------------------------------------------*/
+header {
+  padding-top: 3%;
+  padding-bottom: 3%;
+  width: 95%;
+  display: flex;
+  flex-direction: row;
+  justify-content:center;
+  align-items: center;
+  }
+nav {
+  border-radius: .3rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  opacity: 85%;
+  background-color: black;
+  padding: 1%;
+  width: 95%;
+  height: 10vh;
+  transition: all 0.5s;
+}
+
+.navButton {
+  font-size: 25px;
+  text-align: center;
+  text-decoration: none;
+  color: white;
+  width: 20%
+}
+
+.navButton:hover{
+  color: gray;
+  transition: all 0.5s;
+}
+
+.logo{
+  height: 20vh;
+  background-color: transparent;
+}
+
+/*--------------------------------------------------  portada---------------------------------------------------*/
+.portada{
+  display:flex;
+  flex-direction: row;
+  justify-content: center;
+  height: 600px;
+  width: 90%;
+  margin: 0;
+  overflow: hidden;
+}
+
+.poster{
+  height: 95%;
+  position: relative;
+  overflow: hidden;
+  margin: 2%;
+  display: flex;
+  padding: 0;
+  justify-content: center;
+}
+
+
+.poster img{
+  height: 100%;
+  width: 100%;
+  border-radius: 1rem;
+}
+
+.poster img:hover {
+  transition: all 0.5s;
+  filter: blur(4px);
+}
+.poster a{
+  width: 90%
+}
+
+.poster h1{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%)scale(0);
+  color: white;
+  transition: all .3s;
+  text-align: center;
+  pointer-events: none;
+}
+
+.poster:hover h1{
+  z-index: 1;
+  transform:translate(-50%,-50%) scale(1);
+}
+/*---------------------------------------------album de fotos---------------------------------------------------*/
+
+.albumFotos{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.separadorSeccionFotos{
+  margin-top: 5%;
+  margin-bottom: 5%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 95%;
+  background-image: url(http://drive.google.com/uc?export=view&id=1dsXBfkiQj_GtuLeaUqJ1kqjTBaauXJDr);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  border-radius: .3rem;
+}
+
+.separadorSeccionFotos h1{
+  color: white;
+  margin-top: 10px;
+}
+.foto{
+  object-fit: cover;
+  object-position: center;
+  height: 250px;
+  padding: 2%;
+}
+.marcoFoto{
+  margin: 2%;
+  background-color: black
+}
+
+.foto:hover{
+  padding: 0;
+}
+
+.contenedorFotos{
+  width: 90%;
+}
+/*-----------------------------------------album de videos-------------------------------------------*/
+
+.albumVideos{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.separadorSeccionVideos{
+  margin-top: 5%;
+  margin-bottom: 5%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 95%;
+  background-image: url("http://drive.google.com/uc?export=view&id=1_yWJBxCS6XdnXxwUZrrvS0j_wnKej52K");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  border-radius: .3rem;
+}
+.separadorSeccionVideos h1{
+  color: white;
+  margin-top: 10px;
+}
+
+.slider{
+  width: 90%;
+  box-sizing: content-box;
+  height: max-content;
+  margin: 0;
+  display: flex;
+  flex-direction: row;
+}
+.reproductor{
+  width: 70%;
+  height: auto;
+  position: relative;
+  padding: 0.4%;
+  background-color: black;
+  border-radius: .5rem;
+}
+.menuVideo{
+  margin-left: 1%;
+  margin-right: 1%;
+  margin-bottom: 0;
+  border-radius: .5rem;
+  border: solid 2px gray;
+  width: 30%;
+  min-height: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  background-color: black;
+  padding: 0;
+}
+
+.menuVideo li{
+  border: solid 1px gray;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+.menuVideo p{
+  text-align: center;
+  color: white;
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
+.menuVideo li:hover{
+  cursor: pointer;
+}
+/*---------------------------------------------fechas de funciones-----------------------------------------------*/
+.separadorSeccionFechas{
+  margin-top: 5%;
+  margin-bottom: 5%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 95%;
+  background-image: url("http://drive.google.com/uc?export=view&id=1J9V8s0Sd9F4QgY3I3n6-a4Je4a9d3N3c");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  border-radius: .3rem;
+}
+.separadorSeccionFechas h1{
+  color: black;
+  font-weight: bold;
+  margin-top: 10px;
+}
+.aviso{
+  width: 90%;
+  height: 300px;
+  opacity: 90%;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 2rem;
+}
+.aviso h1{
+  color: white;
+  text-align: center;
+  width: 85%;
+}
+
+/*---------------------------------------------Contacto-----------------------------------------------*/
+.contacto{
+  margin-top: 5%;
+  margin-bottom: 5%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  background-image: url("http://drive.google.com/uc?export=view&id=1RmURO6FX-k4MiP-qLZ9uW7asWHaN-ZYh");
+  background-position: center;
+  background-size: cover;
+  background-repeat: repeat-y;
+  border-radius: 2rem;
+  background-attachment: fixed;
+}
+
+.contacto h1{
+  color: #b5c2c7;
+  margin-top: 10px;
+}
+.contacto a{
+  height: 50px;
+  width: 190px;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  margin-top: 10%;
+  margin-bottom: 1%;
+  overflow: hidden;
+}
+
+.contacto img{
+  width:100%;
+  opacity: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.
